@@ -2,9 +2,10 @@
 
 <h1 align="center">
   <a href="https://github.com/SaadaSamir" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=3D3BF3&center=true&vCenter=true&multiline=true&width=600&height=80&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Saada+Samir;" alt="Typing SVG">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=3D3BF3&center=true&vCenter=true&multiline=true&width=600&height=80&lines=f%22Hi+there+%F0%9F%91%8B%2C+I%27m+%7BSaada%7D%21+Samir%22;" alt="Typing SVG">
   </a>
 </h1>
+
 
 
 <p> I'm a skilled developer with expertise in AI 🤖 , natural language processing (NLP/TALN) 🧠, data mining 🔍, intelligent vision systems, and information retrieval (RI) 📚. I have a strong command of Rust 🦀, Python 🐍, and the MERN stack 🌐, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications 🌍 that integrate advanced technologies to solve complex challenges.</p>
