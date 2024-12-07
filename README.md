@@ -12,7 +12,7 @@
   
   <!-- GIF: To the right of the text -->
   <div>
-    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQza3YyZm83bjlvZGUwbzVyNnByeGlvNXZhZWRqZHVyNGtucmdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="SaadaSamir" />
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQza3YyZm83bjlvZGUwbzVyNnByeGlvNXZhZWRqZHVyNGtucmdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="SaadaSamir"  width="120" height="60" />
   </div>
 </div>
 
