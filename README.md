@@ -8,7 +8,7 @@
 
 <img src="https://komarev.com/ghpvc/?username=SaadaSamir&style=for-the-badge&color=orange" alt="SaadaSamir" />
 
-<div align="center" style="margin-top: 20px; margin-bottom: 20px;">
+<div align="center" style="margin-top: 20px; margin-bottom: 30px;">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="GIF Animation" width="380" height="260" />
 </div>
 
