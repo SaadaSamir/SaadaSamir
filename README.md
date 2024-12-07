@@ -55,9 +55,10 @@ Here are some ideas to get you started:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" height="55" width="55" /> | <img src="https://techstack-generator.vercel.app/js-icon.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" height="55" width="55" /> | <img src="https://techstack-generator.vercel.app/java-icon.svg" height="55" width="55" /> | <img src="https://techstack-generator.vercel.app/python-icon.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dart/dart-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/xml/xml-original.svg" height="55" width="55" /> |
 
-| C++ | C# | Rust |
-| --- | --- | --- |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" height="55" width="55" /> | <img src="/assets/R.png" height="55" width="65" /> |
+| C++ | C# | Rust | Swift |
+| --- | --- | --- | --- |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" height="55" width="55" /> | <img src="/assets/R.png" height="55" width="65" /> |<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" title="Swift" alt="Swift" width="55" height="55" /> |
+
 
 ### Frameworks and Libraries
 
@@ -69,9 +70,7 @@ Here are some ideas to get you started:
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tensorflow/tensorflow-original.svg" title="TensorFlow" alt="TensorFlow" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg" title="PyTorch" alt="PyTorch" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" title="OpenCV" alt="OpenCV" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/streamlit/streamlit-original.svg" title="Streamlit" alt="Streamlit" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original.svg" title="Flask" alt="Flask" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/django/django-plain.svg" title="Django" alt="Django" width="55" height="55" /> | <img src="/assets/gekko.png" title="Gekko" alt="Gekko" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" title="PyQt" alt="PyQt" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" title="PySide" alt="PySide" width="55" height="55" /> | <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" title="Qt Designer" alt="Qt Designer" width="55" height="55" /> |
 
-| Kotlin | Swift |
-| --- | --- |
-| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/kotlin/kotlin-original.svg" title="Kotlin" alt="Kotlin" width="55" height="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/swift/swift-original.svg" title="Swift" alt="Swift" width="55" height="55" /> |
+
 
 
 
