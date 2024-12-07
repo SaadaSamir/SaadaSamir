@@ -6,6 +6,7 @@
   </a>
 </h1>
 
+
 <p> I'm a skilled developer with expertise in AI 🤖 , natural language processing (NLP/TALN) 🧠, data mining 🔍, intelligent vision systems, and information retrieval (RI) 📚. I have a strong command of Rust 🦀, Python 🐍, and the MERN stack 🌐, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications 🌍 that integrate advanced technologies to solve complex challenges.</p>
 <img src="https://komarev.com/ghpvc/?username=SaadaSamir&style=for-the-badge&color=orange" alt="SaadaSamir" />
 
