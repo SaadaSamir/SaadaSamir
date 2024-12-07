@@ -102,10 +102,10 @@ Here are some ideas to get you started:
 | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" height="55" width="55" /> | <img src="https://techstack-generator.vercel.app/github-icon.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/wordpress/wordpress-original.svg" height="55" width="55" /> | <img src="/assets/oracleAPEX_logo.png" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/matlab/matlab-original.svg" height="55" width="55" /> | <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" height="55" width="55" /> |
 <br>
 <div align="center">
-    <img width="600" height="200" src="https://github-readme-stats.vercel.app/api?username=SaadaSamir&show_icons=true&theme=vision-friendly-dark">
-    <img  width="400" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaadaSamir&size_weight=0.0005&count_weight=0.3&layout=compact&theme=vision-friendly-dark">
+    <img width="600" height="200" src="https://github-readme-stats.vercel.app/api?username=SaadaSamir&token_privatestats=true&show_icons=true&theme=vision-friendly-dark">
+    <img  width="400" height="200" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SaadaSamir&token_privatestats=true&size_weight=0.0005&count_weight=0.3&layout=compact&theme=vision-friendly-dark">
  <p>
-    <img width="800" height="220" src="https://streak-stats.demolab.com?user=SaadaSamir&theme=highcontrast&hide_border=true&border_radius=5&card_width=800">
+    <img width="800" height="220" src="https://streak-stats.demolab.com?user=SaadaSamir&token_privatestats=true&theme=highcontrast&hide_border=true&border_radius=5&card_width=800">
   </p>
 </div>
 
