@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <a href="https://github.com/SaadaSamir" target="_blank">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=F96E2A&center=true&vCenter=true&multiline=true&width=600&height=80&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Saada+Samir;" alt="Typing SVG">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=96d3fb&center=true&vCenter=true&multiline=true&width=600&height=80&lines=Hi+there+%F0%9F%91%8B%2C+I'm+Saada+Samir;" alt="Typing SVG">
   </a>
 </h1>
 
