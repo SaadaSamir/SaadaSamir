@@ -9,7 +9,7 @@
 <img src="https://komarev.com/ghpvc/?username=SaadaSamir&style=for-the-badge&color=orange" alt="SaadaSamir" />
 
 <div align="center" style="margin-top: 20px; margin-bottom: 20px;">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="GIF Animation" width="580" height="460" />
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="GIF Animation" width="480" height="360" />
 </div>
 <br>
 
@@ -107,9 +107,10 @@ Here are some ideas to get you started:
 </div>
 
 ---
-
+<div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/output/github-snake.svg" />
   <img alt="github-snake" src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/output/github-snake.svg" />
 </picture>
+</div>
