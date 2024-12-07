@@ -4,18 +4,7 @@
   </a>
 </h1>
 
-<div align="center" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
-  <!-- Text -->
-  <div style="max-width: 60%;">
-    <p> I'm a skilled developer with expertise in AI, natural language processing (NLP/TALN), data mining, intelligent vision systems, and information retrieval (RI). I have a strong command of Rust, Python, and the MERN stack, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications that integrate advanced technologies to solve complex challenges.</p>
-  </div>
-  
-  <!-- Image: Lottie animation exported as GIF or PNG -->
-  <div>
-    <img src="https://example.com/your-exported-lottie-animation.gif" alt="Lottie Animation" width="300" height="300">
-  </div>
-</div>
-
+<p> I'm a skilled developer with expertise in AI, natural language processing (NLP/TALN), data mining, intelligent vision systems, and information retrieval (RI). I have a strong command of Rust, Python, and the MERN stack, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications that integrate advanced technologies to solve complex challenges.</p>
 
 
 
