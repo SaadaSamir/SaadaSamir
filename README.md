@@ -12,12 +12,12 @@
   
   <!-- GIF: To the right of the text -->
   <div>
-    <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="GIF Animation" width="480" height="360" />
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQza3YyZm83bjlvZGUwbzVyNnByeGlvNXZhZWRqZHVyNGtucmdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="SaadaSamir" />
   </div>
 </div>
 
 
-<img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQza3YyZm83bjlvZGUwbzVyNnByeGlvNXZhZWRqZHVyNGtucmdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="SaadaSamir" />
+
 
 <div align="center" style="margin-top: 20px; margin-bottom: 20px;">
   <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" alt="GIF Animation" width="480" height="360" />
