@@ -1,4 +1,4 @@
-<img src="assets/_sVVR3uARJKaxjuEQyXuBg.webp" alt="GIF Animation" width="100%" />
+<img src="assets/_sVVR3uARJKaxjuEQyXuBg.webp" alt="GIF Animation" width="100%" height="60%" />
 
 <h1 align="center">
   <a href="https://github.com/SaadaSamir" target="_blank">
