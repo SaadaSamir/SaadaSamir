@@ -1,4 +1,4 @@
-<img src="assets/fbda2fbc-3c4f-45e0-b802-a7e20f194373.webp" alt="SaadaSamir" width="1024" height="350" />
+<img src="assets/_sVVR3uARJKaxjuEQyXuBg.webp" alt="SaadaSamir" width="1024" height="350" />
 
 <h1 align="center">
   <a href="https://github.com/SaadaSamir" target="_blank">
