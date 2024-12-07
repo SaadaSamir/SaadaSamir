@@ -4,17 +4,7 @@
   </a>
 </h1>
 
-<div align="center" style="display: flex; justify-content: center; align-items: flex-start; gap: 20px;">
-  <!-- Text -->
-  <div style="max-width: 60%;">
-    <p> I'm a skilled developer with expertise in AI, natural language processing (NLP/TALN), data mining, intelligent vision systems, and information retrieval (RI). I have a strong command of Rust, Python, and the MERN stack, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications that integrate advanced technologies to solve complex challenges.</p>
-  </div>
-  
-  <!-- GIF: To the right of the text -->
-  <div>
-    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWQza3YyZm83bjlvZGUwbzVyNnByeGlvNXZhZWRqZHVyNGtucmdrbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/78XCFBGOlS6keY1Bil/giphy.gif" alt="SaadaSamir"  width="120" height="60" />
-  </div>
-</div>
+<p> I'm a skilled developer with expertise in AI, natural language processing (NLP/TALN), data mining, intelligent vision systems, and information retrieval (RI). I have a strong command of Rust, Python, and the MERN stack, enabling me to build efficient, scalable solutions across web and mobile platforms. My work focuses on designing innovative, high-performance applications that integrate advanced technologies to solve complex challenges.</p>
 
 
 
