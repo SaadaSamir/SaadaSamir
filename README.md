@@ -74,13 +74,6 @@ Also here: [search and metaheuristics (BFS, DFS, A\*, GA, BSO)](https://github.c
   </tr>
 </table>
 
-## Activity
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/output/github-snake-dark.svg">
-  <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/output/github-snake.svg" width="100%" alt="Contribution graph eaten by a snake, regenerated every day">
-</picture>
-
 <a href="mailto:saadasamir449@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/footer-dark.svg">
