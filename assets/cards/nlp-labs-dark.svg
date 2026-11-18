@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="236" viewBox="0 0 600 236" role="img" aria-labelledby="title">
+<title id="title">NLP Labs (Jupyter): Eight labs, from text preprocessing to LDA topic models, clustering and Word2Vec / Doc2Vec embeddings.</title>
+<style>
+.sans{font-family:'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,'Noto Sans Arabic',sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,'Cascadia Code','JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
+
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
+
+<rect x=".5" y=".5" width="599" height="235" rx="18" fill="#111113" stroke="#27272a"/>
+<rect x="30" y="0" width="44" height="3" rx="1.5" fill="#c6f135"/>
+<circle cx="36" cy="42" r="6" fill="#da5b0b"/>
+<text x="50" y="46.5" class="mono" font-size="12" fill="#a1a1aa" textLength="50.4" lengthAdjust="spacing" letter-spacing="1">JUPYTER</text>
+<text x="521.6" y="46.5" class="mono" font-size="12" fill="#71717a" textLength="14.4" lengthAdjust="spacing" >05</text>
+<path d="M556 48 L568 36 M559 36 H568 V45" fill="none" stroke="#a1a1aa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="29" y="96" class="sans" font-size="27" font-weight="700" letter-spacing="-.6" fill="#fafafa">NLP Labs</text>
+<text x="30" y="134" class="sans" font-size="16.5" fill="#a1a1aa">Eight labs, from text preprocessing to LDA topic models,</text><text x="30" y="159" class="sans" font-size="16.5" fill="#a1a1aa">clustering and Word2Vec / Doc2Vec embeddings.</text>
+<rect x="30" y="190" width="40.7" height="26" rx="13" fill="none" stroke="#27272a"/><text x="40" y="207.14" class="mono" font-size="11.5" fill="#a1a1aa" textLength="20.7" lengthAdjust="spacing" >nlp</text><rect x="78.7" y="190" width="40.7" height="26" rx="13" fill="none" stroke="#27272a"/><text x="88.7" y="207.14" class="mono" font-size="11.5" fill="#a1a1aa" textLength="20.7" lengthAdjust="spacing" >lda</text><rect x="127.4" y="190" width="75.2" height="26" rx="13" fill="none" stroke="#27272a"/><text x="137.4" y="207.14" class="mono" font-size="11.5" fill="#a1a1aa" textLength="55.2" lengthAdjust="spacing" >word2vec</text>
+
+</svg>
