@@ -79,9 +79,9 @@ function dotGrid(id, t, w, h, cx, cy) {
 function hero(t) {
     const W = 1200, H = 460;
     const lines = [
-        'building Tadbir, an ERP for Algerian SMEs',
+        'building full-stack SaaS platforms',
         'training NLP & computer-vision models',
-        'shipping Laravel · Vue · Python · Rust',
+        'writing fast, concurrent code in Rust',
     ];
     const size = 19, slot = 100 / lines.length;
     let css = `
@@ -156,7 +156,7 @@ ${hello}
 ${mono(86, 350, '$', size, t.accentText, 'font-weight="700"')}
 <svg x="65" y="315" width="600" height="56" viewBox="0 0 600 56">${term}</svg>
 
-${mono(64, 422, 'AI · NLP · COMPUTER VISION · DATA MINING · ERP SYSTEMS', 12.5, t.subtle, 'letter-spacing="1"')}
+${mono(64, 422, 'AI · NLP · COMPUTER VISION · DATA MINING · FULL-STACK · SYSTEMS', 12.5, t.subtle, 'letter-spacing="1"')}
 
 <g>${edges}${trails}${nodes}${glows}${pulses}</g>
 ${mono(850, 422, 'input', 11, t.subtle)}${mono(1080, 422, 'output', 11, t.subtle)}
@@ -173,7 +173,7 @@ function whoami(t) {
         [[I, '  role:     '], [S, '"AI Engineer & Software Engineering Lead"'], [P, ',']],
         [[I, '  craft:    '], [S, '"full-stack products, from model to interface"'], [P, ',']],
         [[I, '  focus:    '], [P, '['], [S, '"NLP"'], [P, ', '], [S, '"computer vision"'], [P, ', '], [S, '"data mining"'], [P, ', '], [S, '"IR"'], [P, '],']],
-        [[I, '  shipping: '], [S, '"Tadbir, the ERP for Algerian SMEs"'], [P, ',']],
+        [[I, '  building: '], [S, '"AI-powered products & scalable platforms"'], [P, ',']],
         [[I, '  stack:    '], [P, '['], [S, '"Python"'], [P, ', '], [S, '"Rust"'], [P, ', '], [S, '"Laravel"'], [P, ', '], [S, '"Vue"'], [P, ', '], [S, '"PostgreSQL"'], [P, '],']],
         [[I, '  speaks:   '], [P, '['], [S, '"العربية"'], [P, ', '], [S, '"Français"'], [P, ', '], [S, '"English"'], [P, '],']],
         [[P, '};']],
@@ -202,51 +202,23 @@ ${mono(W - 32 - monoWidth('TypeScript · UTF-8', 12), 32, 'TypeScript · UTF-8',
 ${rows}
 <rect class="caret" x="${n(84 + monoWidth('};', size) + 4)}" y="${lastY - 15}" width="9" height="20" rx="2" fill="${t.accent}"/>
 `;
-    return svg(W, H, 'whoami: AI Engineer and Software Engineering Lead, full-stack products from model to interface; focus NLP, computer vision, data mining, information retrieval; shipping Tadbir, the ERP for Algerian SMEs; speaks Arabic, French and English', body, css);
+    return svg(W, H, 'whoami: AI Engineer and Software Engineering Lead, full-stack products from model to interface; focus NLP, computer vision, data mining, information retrieval; building AI-powered products and scalable platforms; speaks Arabic, French and English', body, css);
 }
 
-// ---------------------------------------------------------------- Tadbir
-function tadbir(t) {
-    const W = 1200, H = 664;
-    const features = [
-        'SCF accounting, closing and statements',
-        'G50 and annual tax returns',
-        'Payroll with CNAS and IRG',
-        'Sales, purchases, stock, point of sale',
-        'Multi-tenant, row-level security',
-        'French and Arabic, right-to-left ready',
-    ];
-    const feat = features.map((f, i) => {
-        const y = 318 + i * 42;
-        return `<rect x="64" y="${y - 16}" width="20" height="20" rx="6" fill="${t.accent}"/><path d="M69 ${y - 6} l3.6 3.6 l6.4 -7" fill="none" stroke="${t.onAccent}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="${y}" class="sans" font-size="18" fill="${t.ink}">${esc(f)}</text>`;
-    }).join('');
+// ---------------------------------------------------------------- Ce que je fais
+function chipRows(x, y, labels, maxW, t, opts) {
+    const rows = [[]];
+    let width = 0;
+    for (const l of labels) {
+        const w = monoWidth(l, opts.size) + opts.padX * 2 + 8;
+        if (width + w > maxW && rows[rows.length - 1].length) { rows.push([]); width = 0; }
+        rows[rows.length - 1].push(l);
+        width += w;
+    }
+    return rows.map((r, i) => chips(x, y + i * (opts.h + 8), r, t, opts)).join('');
+}
 
-    // Maquette de l'application (données de démonstration).
-    const X = 556, Y = 52, MW = 600, MH = 548;
-    const nav = ['Tableau de bord', 'Ventes', 'Achats', 'Stock', 'Comptabilité', 'Paie', 'Fiscalité', 'Trésorerie'];
-    const navSvg = nav.map((label, i) => {
-        const y = Y + 112 + i * 34;
-        const active = i === 0;
-        return (active ? `<rect x="${X + 12}" y="${y - 21}" width="132" height="30" rx="8" fill="${t.raised}"/><rect x="${X + 12}" y="${y - 14}" width="3" height="16" rx="1.5" fill="${t.accent}"/>` : '')
-            + `<rect x="${X + 26}" y="${y - 11}" width="10" height="10" rx="3" fill="none" stroke="${active ? t.stroke : t.subtle}" stroke-width="1.4"/>`
-            + `<text x="${X + 46}" y="${y - 1}" class="sans" font-size="12.5" fill="${active ? t.ink : t.muted}"${active ? ' font-weight="600"' : ''}>${esc(label)}</text>`;
-    }).join('');
-
-    const MX = X + 172, MWIDTH = MW - 172 - 22;
-    const kpis = [['Chiffre d\'affaires', '48,2 M', '+12,4 %'], ['Marge brute', '13,9 M', '+4,1 %'], ['Trésorerie', '9,7 M', '13 sem.']];
-    const kw = (MWIDTH - 20) / 3;
-    const kpiSvg = kpis.map(([label, value, delta], i) => {
-        const x = MX + i * (kw + 10), y = Y + 110;
-        return `<rect x="${n(x)}" y="${y}" width="${n(kw)}" height="86" rx="12" fill="${t.surface}" stroke="${t.line}"/>
-<text x="${n(x + 14)}" y="${y + 24}" class="sans" font-size="11.5" fill="${t.muted}">${esc(label)}</text>
-<text x="${n(x + 14)}" y="${y + 56}" class="sans" font-size="23" font-weight="700" fill="${t.ink}">${esc(value)}<tspan font-size="12" font-weight="500" fill="${t.subtle}"> DA</tspan></text>
-${mono(x + 14, y + 74, delta, 10.5, i < 2 ? t.accentText : t.subtle)}`;
-    }).join('');
-
-    const cy = Y + 212, ch = 178;
-    const data = [28, 31, 29.5, 34, 36, 33.5, 38, 41, 39.5, 44, 46, 48.2];
-    const px = MX + 18, pw = MWIDTH - 36, pt = cy + 46, ph = 98;
-    const pts = data.map((v, i) => [px + (i * pw) / (data.length - 1), pt + ph - ((v - 24) / 26) * ph]);
+function smooth(pts) {
     let d = `M${n(pts[0][0])} ${n(pts[0][1])}`;
     for (let i = 0; i < pts.length - 1; i++) {
         const p0 = pts[i - 1] ?? pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] ?? p2;
@@ -254,80 +226,97 @@ ${mono(x + 14, y + 74, delta, 10.5, i < 2 ? t.accentText : t.subtle)}`;
         const c2 = [p2[0] - (p3[0] - p1[0]) / 6, p2[1] - (p3[1] - p1[1]) / 6];
         d += ` C${n(c1[0])} ${n(c1[1])} ${n(c2[0])} ${n(c2[1])} ${n(p2[0])} ${n(p2[1])}`;
     }
-    const last = pts[pts.length - 1];
-    const area = `${d} L${n(last[0])} ${pt + ph} L${n(pts[0][0])} ${pt + ph} Z`;
-    const grid = [0, 1, 2].map((k) => `<path d="M${px} ${n(pt + (k * ph) / 2)} H${px + pw}" stroke="${t.line}" stroke-dasharray="3 4"/>`).join('');
-    const months = 'JFMAMJJASOND'.split('').map((m, i) => mono(pts[i][0] - 3, pt + ph + 22, m, 10, t.subtle)).join('');
+    return d;
+}
 
-    const ty = cy + ch + 12;
-    const invoices = [['FA-2026-0412', '1 240 000,00', 'Payée'], ['FA-2026-0411', '865 300,00', 'Envoyée'], ['FA-2026-0410', '2 104 750,00', 'Échue']];
-    const rows = invoices.map(([num, amount, status], i) => {
-        const y = ty + 54 + i * 26;
-        const c = chip(MX + MWIDTH - 96, y - 17, status.toUpperCase(), t, { size: 9.5, padX: 9, h: 22, color: i === 0 ? t.accentText : t.muted, stroke: i === 0 ? t.stroke : t.line });
-        return (i ? `<path d="M${MX + 14} ${y - 18} H${MX + MWIDTH - 14}" stroke="${t.line}"/>` : '')
-            + mono(MX + 16, y, num, 11.5, t.ink) + mono(MX + 160, y, `${amount} DA`, 11.5, t.muted) + c.svg;
-    }).join('');
-
-    const css = `
-.draw{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 11s cubic-bezier(.3,.7,.2,1) infinite}
-@keyframes draw{0%{stroke-dashoffset:1;opacity:1}24%{stroke-dashoffset:0}92%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
-.fill{animation:fill 11s ease-out infinite}
-@keyframes fill{0%,10%{opacity:0}30%,92%{opacity:1}100%{opacity:0}}
-.ping{transform-box:fill-box;transform-origin:center;animation:ping 2.2s ease-out infinite}
-@keyframes ping{0%{transform:scale(1);opacity:.6}100%{transform:scale(3.2);opacity:0}}
-@media (prefers-reduced-motion: reduce){.draw{stroke-dashoffset:0}.fill{opacity:1}}`;
-
-    const body = `
-<defs>
-<clipPath id="card"><rect width="${W}" height="${H}" rx="24"/></clipPath>
-<linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${t.stroke}" stop-opacity=".28"/><stop offset="1" stop-color="${t.stroke}" stop-opacity="0"/></linearGradient>
-<filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="${t === THEMES.dark ? 0.5 : 0.1}"/></filter>
-</defs>
-<rect width="${W}" height="${H}" rx="24" fill="${t.surface}"/>
-<g clip-path="url(#card)">${dotGrid('tdots', t, W, H, 0.74, 0.42)}</g>
-<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="23.5" fill="none" stroke="${t.line}"/>
-
-${mono(64, 92, 'ERP SAAS · MADE FOR ALGERIA', 13, t.accentText, 'letter-spacing="1"')}
-<text x="60" y="170" class="sans" font-size="78" font-weight="700" letter-spacing="-2.5" fill="${t.ink}">Tadbir</text>
-<text x="314" y="166" class="sans" font-size="40" font-weight="600" fill="${t.subtle}">تدبير</text>
-<text x="64" y="218" class="sans" font-size="23" fill="${t.ink}">The ERP built for Algerian SMEs:</text>
-<text x="64" y="250" class="sans" font-size="23" fill="${t.muted}">one workspace, from the ledger to the payslip.</text>
-${feat}
-${chips(64, 586, ['LARAVEL 13', 'VUE 3', 'POSTGRESQL 17', 'TAILWIND 4'], t, { size: 11.5, padX: 11, h: 28 })}
-
-<g filter="url(#shadow)"><rect x="${X}" y="${Y}" width="${MW}" height="${MH}" rx="16" fill="${t.window}"/></g>
-<rect x="${X + 0.5}" y="${Y + 0.5}" width="${MW - 1}" height="${MH - 1}" rx="15.5" fill="none" stroke="${t.line}"/>
-<path d="M${X} ${Y + 44.5} H${X + MW}" stroke="${t.line}"/>
-<circle cx="${X + 22}" cy="${Y + 22}" r="5" fill="${t.line}"/><circle cx="${X + 39}" cy="${Y + 22}" r="5" fill="${t.line}"/><circle cx="${X + 56}" cy="${Y + 22}" r="5" fill="${t.line}"/>
-${mono(X + 84, Y + 27, 'tadbir — tableau de bord', 11, t.subtle)}
-<rect x="${X + MW - 78}" y="${Y + 11}" width="62" height="23" rx="11.5" fill="${t.raised}"/>
-${mono(X + MW - 68, Y + 27, 'FR', 10.5, t.ink)}<text x="${X + MW - 46}" y="${Y + 27}" class="mono" font-size="10.5" fill="${t.subtle}">|</text><text x="${X + MW - 34}" y="${Y + 27.5}" class="sans" font-size="12" fill="${t.muted}">ع</text>
-<path d="M${X + 156.5} ${Y + 45} V${Y + MH}" stroke="${t.line}"/>
-<rect x="${X + 18}" y="${Y + 60}" width="26" height="26" rx="7" fill="${t.accent}"/>
-<text x="${X + 25.5}" y="${Y + 79}" class="sans" font-size="16" font-weight="800" fill="${t.onAccent}">T</text>
-<text x="${X + 54}" y="${Y + 79}" class="sans" font-size="15" font-weight="700" fill="${t.ink}">Tadbir</text>
-${navSvg}
-
-<text x="${MX}" y="${Y + 82}" class="sans" font-size="20" font-weight="700" fill="${t.ink}">Tableau de bord</text>
-${mono(MX, Y + 100, 'novembre 2026 · données de démonstration', 10, t.subtle)}
-${kpiSvg}
-
-<rect x="${MX}" y="${cy}" width="${MWIDTH}" height="${ch}" rx="12" fill="${t.surface}" stroke="${t.line}"/>
-<text x="${MX + 16}" y="${cy + 26}" class="sans" font-size="12.5" font-weight="600" fill="${t.ink}">Chiffre d'affaires · 12 mois</text>
-${mono(MX + MWIDTH - 16 - monoWidth('M DA', 10), cy + 26, 'M DA', 10, t.subtle)}
-${grid}
-<path class="fill" d="${area}" fill="url(#area)"/>
-<path class="draw" d="${d}" pathLength="1" fill="none" stroke="${t.stroke}" stroke-width="2.4" stroke-linecap="round"/>
-<circle cx="${n(last[0])}" cy="${n(last[1])}" r="4.5" fill="${t.stroke}"/><circle class="ping" cx="${n(last[0])}" cy="${n(last[1])}" r="4.5" fill="${t.stroke}"/>
-${months}
-
-<rect x="${MX}" y="${ty}" width="${MWIDTH}" height="${MH - (ty - Y) - 18}" rx="12" fill="${t.surface}" stroke="${t.line}"/>
-<text x="${MX + 16}" y="${ty + 26}" class="sans" font-size="12.5" font-weight="600" fill="${t.ink}">Dernières factures</text>
-${rows}
-
-${mono(X + MW - monoWidth('interface preview · demo data', 10.5), H - 26, 'interface preview · demo data', 10.5, t.subtle)}
+function pillars(t) {
+    const W = 1200, H = 430, PW = 384, GAP = 24;
+    const items = [
+        { title: 'AI & Machine Learning', text: 'NLP, computer vision, data mining and information retrieval: from raw data to evaluated models.', tags: ['PYTORCH', 'TENSORFLOW', 'SCIKIT-LEARN', 'OPENCV'] },
+        { title: 'Full-stack products', text: 'SaaS platforms, dashboards and APIs, designed end to end, from the database to the interface.', tags: ['LARAVEL', 'VUE', 'REACT', 'NODE.JS', 'POSTGRESQL'] },
+        { title: 'Systems & performance', text: 'Concurrency, compilers and low-level code, where speed and correctness both matter.', tags: ['RUST', 'C', 'JAVA', 'FLEX/BISON'] },
+    ];
+    let css = `
+.draw{stroke-dasharray:1;animation:draw 9s cubic-bezier(.3,.7,.2,1) infinite}
+@keyframes draw{0%{stroke-dashoffset:1;opacity:1}28%{stroke-dashoffset:0}90%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:0}}
+.scan{animation:scan 6s steps(1) infinite}
+@keyframes scan{0%{transform:translate(0,0)}16.66%{transform:translate(22px,22px)}33.33%{transform:translate(44px,44px)}50%{transform:translate(66px,66px)}66.66%{transform:translate(88px,88px)}83.33%{transform:translate(110px,110px)}}
+.nav{animation:nav 8s cubic-bezier(.6,0,.2,1) infinite}
+@keyframes nav{0%,22%{transform:translateY(0)}25%,47%{transform:translateY(22px)}50%,72%{transform:translateY(44px)}75%,97%{transform:translateY(66px)}100%{transform:translateY(0)}}
+.bar{transform-box:fill-box;transform-origin:left;animation:bar 9s linear infinite}
+@keyframes bar{0%,46%{transform:scaleX(0)}68%,100%{transform:scaleX(1)}}
+.caret{animation:blink 1.05s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
 `;
-    return svg(W, H, 'Tadbir, the ERP built for Algerian SMEs: SCF accounting, G50 and annual tax returns, CNAS and IRG payroll, sales, purchases, stock and point of sale, multi-tenant with row-level security, in French and Arabic', body, css);
+    const panels = items.map((it, i) => {
+        const x = i * (PW + GAP), vx = x + 16, vy = 16, vw = PW - 32, vh = 172;
+        let visual = '';
+        if (i === 0) {
+            // Matrice de confusion et courbe d'apprentissage.
+            let seed = 7;
+            const rnd = () => ((seed = (seed * 9301 + 49297) % 233280) / 233280);
+            let cells = '';
+            for (let r = 0; r < 6; r++) for (let c = 0; c < 6; c++) {
+                const v = r === c ? 0.75 + rnd() * 0.25 : rnd() * 0.22;
+                cells += `<rect x="${vx + 20 + c * 22}" y="${vy + 22 + r * 22}" width="18" height="18" rx="4" fill="${r === c ? t.stroke : t.subtle}" opacity="${n(r === c ? v : 0.08 + v)}"/>`;
+            }
+            const scan = `<rect class="scan" x="${vx + 18}" y="${vy + 20}" width="22" height="22" rx="6" fill="none" stroke="${t.ink}" stroke-width="1.5" opacity=".8"/>`;
+            const cx0 = vx + 182, cw = 150, cy0 = vy + 30, ch = 110;
+            const loss = [0.95, 0.62, 0.45, 0.36, 0.3, 0.255, 0.22, 0.2, 0.185, 0.175, 0.168];
+            const pts = loss.map((v, k) => [cx0 + (k * cw) / (loss.length - 1), cy0 + (1 - v) * ch]);
+            const axes = `<path d="M${cx0} ${cy0} V${cy0 + ch} H${cx0 + cw}" fill="none" stroke="${t.line}"/>`;
+            visual = cells + scan + axes
+                + `<path class="draw" d="${smooth(pts)}" pathLength="1" fill="none" stroke="${t.stroke}" stroke-width="2.2" stroke-linecap="round"/>`
+                + mono(cx0, cy0 + ch + 20, 'loss / epoch', 10, t.subtle);
+        } else if (i === 1) {
+            // Maquette d'application : barre latérale, tuiles, graphique.
+            const sx = vx + 14, sy = vy + 14;
+            let side = `<rect x="${sx}" y="${sy}" width="70" height="${vh - 28}" rx="8" fill="${t.raised}"/>`
+                + `<rect x="${sx + 10}" y="${sy + 12}" width="16" height="16" rx="5" fill="${t.accent}"/>`;
+            for (let k = 0; k < 4; k++) side += `<rect x="${sx + 12}" y="${sy + 44 + k * 22}" width="${[40, 32, 44, 28][k]}" height="6" rx="3" fill="${t.subtle}" opacity=".45"/>`;
+            side += `<rect class="nav" x="${sx + 4}" y="${sy + 39}" width="3" height="16" rx="1.5" fill="${t.stroke}"/>`;
+            const mx = sx + 84, mw = vw - 112;
+            let tiles = '';
+            for (let k = 0; k < 3; k++) {
+                const tx = mx + k * ((mw - 16) / 3 + 8), tw = (mw - 16) / 3;
+                tiles += `<rect x="${n(tx)}" y="${sy}" width="${n(tw)}" height="44" rx="7" fill="none" stroke="${t.line}"/><rect x="${n(tx + 8)}" y="${sy + 10}" width="${n(tw * 0.45)}" height="5" rx="2.5" fill="${t.subtle}" opacity=".5"/><rect x="${n(tx + 8)}" y="${sy + 24}" width="${n(tw * 0.65)}" height="9" rx="3" fill="${t.ink}" opacity=".85"/>`;
+            }
+            const gy = sy + 56, gh = vh - 28 - 56;
+            const series = [30, 38, 34, 46, 44, 55, 52, 63, 70, 68, 80];
+            const pts = series.map((v, k) => [mx + 10 + (k * (mw - 20)) / (series.length - 1), gy + gh - 10 - (v / 90) * (gh - 20)]);
+            visual = side + tiles + `<rect x="${mx}" y="${gy}" width="${mw}" height="${gh}" rx="7" fill="none" stroke="${t.line}"/>`
+                + `<path class="draw" d="${smooth(pts)}" pathLength="1" fill="none" stroke="${t.stroke}" stroke-width="2.2" stroke-linecap="round"/>`;
+        } else {
+            // Terminal : compilation, exécution parallèle, compilateur.
+            const lines = [
+                [t.accentText, '$ cargo build --release'],
+                [t.subtle, '  Finished `release` profile [optimized]'],
+                [t.accentText, '$ cargo run --release -- input.txt'],
+                null,
+                [t.accentText, '$ bison -d syntaxique.y && flex lexicale.l'],
+            ];
+                        visual = lines.map((l, k) => {
+                const y = vy + 34 + k * 26, delay = `style="animation:tl${k} 9s steps(1) infinite"`;
+                css += `@keyframes tl${k}{0%{opacity:0}${n(4 + k * 14)}%{opacity:1}96%{opacity:1}100%{opacity:0}}\n`;
+                if (!l) {
+                    return `<g ${delay}><rect x="${vx + 18}" y="${y - 10}" width="200" height="10" rx="3" fill="${t.raised}"/><rect class="bar" x="${vx + 18}" y="${y - 10}" width="200" height="10" rx="3" fill="${t.stroke}"/>${mono(vx + 228, y, '100%', 11, t.muted)}</g>`;
+                }
+                const size = 11.5, text = l[1];
+                return `<g ${delay}>${mono(vx + 18, y, text, size, l[0])}</g>`;
+            }).join('') + `<rect class="caret" x="${vx + 18}" y="${vy + 34 + 5 * 26 - 12}" width="8" height="15" rx="2" fill="${t.accent}"/>`;
+        }
+        const desc = wrap(it.text, 40).map((line, k) => `<text x="${x + 24}" y="${296 + k * 24}" class="sans" font-size="16" fill="${t.muted}">${esc(line)}</text>`).join('');
+        return `<g>
+<rect x="${x + 0.5}" y=".5" width="${PW - 1}" height="${H - 1}" rx="20" fill="${t.surface}" stroke="${t.line}"/>
+<rect x="${vx}" y="${vy}" width="${vw}" height="${vh}" rx="12" fill="${t.window}" stroke="${t.line}"/>
+${visual}
+${mono(x + 24, 226, String(i + 1).padStart(2, '0'), 12, t.accentText, 'letter-spacing="1"')}
+<text x="${x + 23}" y="262" class="sans" font-size="24" font-weight="700" letter-spacing="-.5" fill="${t.ink}">${esc(it.title)}</text>
+${desc}
+${chipRows(x + 24, 378, it.tags, PW - 40, t, { size: 10.5, padX: 9, h: 26 })}
+</g>`;
+    }).join('\n');
+    return svg(W, H, 'What I do: AI and machine learning (NLP, computer vision, data mining, information retrieval); full-stack products (SaaS platforms, dashboards and APIs); systems and performance (concurrency, compilers, low-level code in Rust, C and Java)', panels, css);
 }
 
 // ---------------------------------------------------------------- Cartes projets
@@ -391,13 +380,13 @@ function footer(t) {
 <g clip-path="url(#frame)">${dotGrid('fdots', t, W, H, 0.85, 0.3)}</g>
 <rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="23.5" fill="none" stroke="${t.line}"/>
 ${mono(64, 84, "WHAT'S NEXT", 13, t.accentText, 'letter-spacing="1"')}
-<text x="60" y="152" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="${t.ink}">Got a product to build,</text>
-<text x="60" y="214" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="${t.ink}">or an ERP to pilot<tspan fill="${t.stroke}">?</tspan></text>
+<text x="60" y="152" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="${t.ink}">Have an idea worth building?</text>
+<text x="60" y="214" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="${t.ink}">Let's make it real<tspan fill="${t.stroke}">.</tspan></text>
 ${mono(64, 258, 'saadasamir449@gmail.com', 15, t.muted)}
 ${mono(W - 64 - monoWidth('À BIENTÔT · SEE YOU SOON ·', 12) - 52, 258, 'À BIENTÔT · SEE YOU SOON ·', 12, t.subtle)}
 <text x="${W - 64}" y="258" class="sans" font-size="14" text-anchor="end" fill="${t.subtle}">إلى اللقاء</text>
 `;
-    return svg(W, H, "What's next: got a product to build, or an ERP to pilot? Write to saadasamir449@gmail.com", body);
+    return svg(W, H, "What's next: have an idea worth building? Let's make it real. Write to saadasamir449@gmail.com", body);
 }
 
 // ---------------------------------------------------------------- Écriture
@@ -410,11 +399,11 @@ const write = (path, content) => {
 for (const [name, t] of Object.entries(THEMES)) {
     write(`hero-${name}.svg`, hero(t));
     write(`whoami-${name}.svg`, whoami(t));
-    write(`tadbir-${name}.svg`, tadbir(t));
+    write(`pillars-${name}.svg`, pillars(t));
     write(`footer-${name}.svg`, footer(t));
     PROJECTS.forEach((p, i) => write(`cards/${p.slug}-${name}.svg`, card(p, i, t)));
+    write(`buttons/talk-${name}.svg`, button("LET'S TALK", t, true));
     write(`buttons/linkedin-${name}.svg`, button('LINKEDIN', t));
-    write(`buttons/email-${name}.svg`, button('EMAIL', t));
-    write(`buttons/demo-${name}.svg`, button('TADBIR DEMO', t, true));
+    write(`buttons/repos-${name}.svg`, button('REPOSITORIES', t));
 }
 console.log('assets generated');

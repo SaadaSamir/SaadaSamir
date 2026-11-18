@@ -9,28 +9,22 @@
 </picture>
 
 <p align="center">
+  <a href="mailto:saadasamir449@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/talk-dark.svg"><img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/talk-light.svg" height="46" alt="Let's talk: send me an email"></picture></a>&nbsp;
   <a href="https://dz.linkedin.com/in/samir-saada-5667b1245"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/linkedin-dark.svg"><img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/linkedin-light.svg" height="46" alt="LinkedIn"></picture></a>&nbsp;
-  <a href="mailto:saadasamir449@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/email-dark.svg"><img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/email-light.svg" height="46" alt="Email"></picture></a>&nbsp;
-  <a href="mailto:saadasamir449@gmail.com?subject=Tadbir%20demo"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/demo-dark.svg"><img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/demo-light.svg" height="46" alt="Request a Tadbir demo"></picture></a>
+  <a href="https://github.com/SaadaSamir?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/repos-dark.svg"><img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/buttons/repos-light.svg" height="46" alt="Repositories"></picture></a>
 </p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/whoami-dark.svg">
-  <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/whoami-light.svg" width="100%" alt="whoami: AI Engineer and Software Engineering Lead; full-stack products, from model to interface; focus on NLP, computer vision, data mining and information retrieval; shipping Tadbir, the ERP for Algerian SMEs; stack Python, Rust, Laravel, Vue, PostgreSQL; speaks Arabic, French and English.">
+  <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/whoami-light.svg" width="100%" alt="whoami: AI Engineer and Software Engineering Lead; full-stack products, from model to interface; focus on NLP, computer vision, data mining and information retrieval; building AI-powered products and scalable platforms; stack Python, Rust, Laravel, Vue, PostgreSQL; speaks Arabic, French and English.">
 </picture>
 
-## Flagship project
+## What I do
 
-<a href="mailto:saadasamir449@gmail.com?subject=Tadbir%20demo">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/tadbir-dark.svg">
-    <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/tadbir-light.svg" width="100%" alt="Tadbir, the ERP built for Algerian SMEs: SCF accounting, closing and statements; G50 and annual tax returns; payroll with CNAS and IRG; sales, purchases, stock and point of sale; multi-tenant with row-level security; French and Arabic.">
-  </picture>
-</a>
-
-**Tadbir** (تدبير, *management*) is the ERP I am building for Algerian SMEs, designed around local rules instead of patched onto them: the SCF chart of accounts, G50 returns and IBS installments, CNAS and IRG payroll. One workspace covers accounting from the first entry to the financial statements, then sales, purchases, stock, point of sale, CRM, projects and payroll, in French and Arabic.
-
-<sub>Laravel 13 · Vue 3 with Inertia · Tailwind 4 · PostgreSQL 17 with row-level security · REST API · TOTP two-factor authentication. The repository is private; a live demo is available on request.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/pillars-dark.svg">
+  <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/pillars-light.svg" width="100%" alt="What I do. AI and machine learning: NLP, computer vision, data mining and information retrieval, from raw data to evaluated models. Full-stack products: SaaS platforms, dashboards and APIs, from the database to the interface. Systems and performance: concurrency, compilers and low-level code in Rust, C and Java.">
+</picture>
 
 ## Selected work
 
@@ -77,6 +71,6 @@ Also here: [search and metaheuristics (BFS, DFS, A\*, GA, BSO)](https://github.c
 <a href="mailto:saadasamir449@gmail.com">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/footer-dark.svg">
-    <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/footer-light.svg" width="100%" alt="What's next: got a product to build, or an ERP to pilot? Write to saadasamir449@gmail.com">
+    <img src="https://raw.githubusercontent.com/SaadaSamir/SaadaSamir/main/assets/footer-light.svg" width="100%" alt="What's next: have an idea worth building? Let's make it real. Write to saadasamir449@gmail.com">
   </picture>
 </a>

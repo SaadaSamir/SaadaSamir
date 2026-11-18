@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title">
-<title id="title">What's next: got a product to build, or an ERP to pilot? Write to saadasamir449@gmail.com</title>
+<title id="title">What's next: have an idea worth building? Let's make it real. Write to saadasamir449@gmail.com</title>
 <style>
 .sans{font-family:'Segoe UI Variable Display','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,'Noto Sans Arabic',sans-serif}
 .mono{font-family:ui-monospace,SFMono-Regular,'Cascadia Code','JetBrains Mono',Menlo,Consolas,'Liberation Mono',monospace}
@@ -19,8 +19,8 @@
 <rect width="1200" height="300" fill="url(#fdots-glow)"/></g>
 <rect x=".5" y=".5" width="1199" height="299" rx="23.5" fill="none" stroke="#27272a"/>
 <text x="64" y="84" class="mono" font-size="13" fill="#c6f135" textLength="85.8" lengthAdjust="spacing" letter-spacing="1">WHAT'S NEXT</text>
-<text x="60" y="152" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="#fafafa">Got a product to build,</text>
-<text x="60" y="214" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="#fafafa">or an ERP to pilot<tspan fill="#c6f135">?</tspan></text>
+<text x="60" y="152" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="#fafafa">Have an idea worth building?</text>
+<text x="60" y="214" class="sans" font-size="54" font-weight="700" letter-spacing="-1.6" fill="#fafafa">Let's make it real<tspan fill="#c6f135">.</tspan></text>
 <text x="64" y="258" class="mono" font-size="15" fill="#a1a1aa" textLength="207" lengthAdjust="spacing" >saadasamir449@gmail.com</text>
 <text x="896.8" y="258" class="mono" font-size="12" fill="#71717a" textLength="187.2" lengthAdjust="spacing" >À BIENTÔT · SEE YOU SOON ·</text>
 <text x="1136" y="258" class="sans" font-size="14" text-anchor="end" fill="#71717a">إلى اللقاء</text>
